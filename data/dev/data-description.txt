@@ -1,0 +1,53 @@
+== Dialogue Breakdown Detection Challenge 3 ==
+== development data descriptions ==
+
+July 4th, 2017
+
+0. Overview
+
+This data is development data for DBDC3 in DSTC6. The original dialogue data is from the WOCHAT TickTock dataset (see http://workshop.colips.org/wochat/data/index.html).
+
+
+1. File name
+Each JSON file contains one dialogue session, which conforms with the naming convention: <dialogue-id>.log.json
+
+
+2. File format
+Each file is in JSON format with UTF-8 encoding. Each file contains a dialogue that starts with a user utterance. A user and the system converse interchangeably and both utter ten times. 
+
+Following are the top-level fields:
+* dialogue-id: dialogue ID in the original dataset
+* group-id: (not used)
+* speaker-id: speaker (user) ID in the original dataset
+* turns: array of utterances from the user and the system with breakdown annotations
+
+Each element of the 'turns' field contains the following fields:
+* utterance: the contents of an utterance 
+* turn-index: index from 0 to 19 for one of the 20 utterance sequence
+* time: (not used) 
+* speaker: the speaker of this utterance. "U" indicates user and "S" indicates the system.
+* annotations: breakdown annotations by 30 annotators (only for system utterances)
+
+Each element of the 'annotations' field contains the following fields:
+* annotator-id: crowd-worker ID in CrowdFlower
+* breakdown: one of the following three labels:
+    O: Not a breakdown
+    T: Possibly breakdown
+    X: Breakdown
+* ungrammatical-sentence: (not used) * comment: (not used) 
+
+NOTE: Only the 'turn-index' field is numerical. All the others are textual.
+
+
+3. Speakers
+Refer to http://workshop.colips.org/wochat/data/index.html
+
+
+4. Annotators
+All are crowd workers who participated the annotation task through CrowdFlower.
+They are 'level-2' annotators from Australia, Canada, New Zealand, United Kingdom, and United States. 
+We asked the non-native English speaking workers to refrain from joining this annotation task but this is not guaranteed.
+
+
+5. Miscellaneous Notes
+Due to the subjective nature of this task, we did not provide any check question to be used in CrowdFlower.
