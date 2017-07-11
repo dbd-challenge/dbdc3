@@ -34,7 +34,8 @@ Each element of the 'annotations' field contains the following fields:
     O: Not a breakdown
     T: Possibly breakdown
     X: Breakdown
-* ungrammatical-sentence: (not used) * comment: (not used) 
+* ungrammatical-sentence: (not used) 
+* comment: (not used) 
 
 NOTE: Only the 'turn-index' field is numerical. All the others are textual.
 
