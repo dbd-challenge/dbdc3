@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DSTC6 Track 3: Dialogue Breakdown Detection</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+<div id="header"><div><ul id="navigation">
+<li class="active"><a href="http://workshop.colips.org/dstc6/index.html">DSTC6</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></li>
+<li class="active"><a href="index.html">Breakdown detection</a></li>
+</ul></div></div>
+<div id="adbox"><div class="clearfix">
+<div><h1>Dialogue Breakdown Detection</h1>
+<img src="images/DBD.png" alt="Img" width="400">
+<h2>A Task of Dialogue System Technology Challenge 6 (DSTC6)</h2>
+</div></div></div>
+
+<div id="contents">
+</br></br>
+
+<div id="about">
+<h2>Task Description</h2>
+<p>
+The task of dialogue breakdown detection is to detect whether the system
+utterance causes dialogue breakdown (a situation in a dialogue where users
+cannot proceed with the conversation) in a given dialogue context. The
+participants of this track will develop a dialogue breakdown detector
+that outputs a dialogue breakdown label (B: breakdown, PB: possible
+breakdown, or NB:Not a breakdown) and a distribution of these labels.
+
+<h2>Provided Data for the Challenge</h2>
+<img src="images/DBD-data.png" alt="Img" width="600">
+<p>
+Chat-oriented dialogues (dialogue history between a user and a
+chat-oriented dialogue system) are annotated with breakdown labels
+for each turn by several annotators (2-30) as shown in the example.
+The challenge data is 100 dialogues in English annotated with
+dialogue breakdown labels.
+
+<h2>Evaluation Metrics</h2>
+<p>
+* Classification-related metrics:</br>
+Accuracy, prevision, recall and F-measure of estimated labels.
+These metrics are calculated by comparing the output of the detector
+and the gold label determined by majority voting of results of several
+annotators
+<p>
+* Distribution-related metrics:</br>
+JS divergence and mean squared error to the distribution of annotated
+labels. This metrics are calculated by comparing the predicted
+distribution of the labels with the distribution of annotation (?)
+</div>
+
+<div id="schedule">
+<h2>Schedule</h2>
+<span><table style="width:100%">
+<tr><td width="50%" valign="top">
+<p>
+* Jun 1 2017: Training Data Release</br>
+* Aug 28 2017: The Deadline of Registration</br>
+* Sep 18 2017: Test Data Release</br>
+* Sep 25 2017: The Deadline of Results Submission</br>
+* Oct 20 2017: The Deadline of Paper Submission</br>
+</div>
+
+<div id="sponsors">
+<h2>Sponsors</h2>
+DBDC3 organizers gratefully acknowledge the generous support provided by the following:
+</br>
+<span><table style="width:100%">
+<tr>
+<a href="https://www.d-itlab.co.jp/?lang=en"><img src="images/IT_LAB_logo_20111221.png" alt="Img" width="300"></a>
+</tr>
+</table>
+</div>
+
+<div id="organizer">
+<h2>Task Organizers</h2>
+<p>
+* Ryuichiro Higashinaka (NTT)</br>
+* Kotaro Funakoshi (Kyoto University/Honda Research Institute Japan)</br>
+* Michimasa Inaba (Hiroshima City University)</br>
+* Yuiko Tsunomori (NTT Docomo)</br>
+* Tetsuro Takahashi (Fujitsu)</br>
+* Nobuhiro Kaji (Yahoo Japan Corporation)</br>
+</div>
+</body>
+
+</html>
