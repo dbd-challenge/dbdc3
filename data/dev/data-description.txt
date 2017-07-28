@@ -1,11 +1,15 @@
 == Dialogue Breakdown Detection Challenge 3 ==
-== development data descriptions ==
+== development data description ==
 
-July 4th, 2017
+July 28th, 2017
 
 0. Overview
 
-This data is development data for DBDC3 in DSTC6. The original dialogue data is from the WOCHAT TickTock dataset (see http://workshop.colips.org/wochat/data/index.html).
+ticktock_100.zip
+iris_100.zip
+
+These zip files are development data for DBDC3 in DSTC6. The original dialogue data is from the WOCHAT TickTock and IRIS dataset (see http://workshop.colips.org/wochat/data/index.html).
+Each zip file contains 100 dialogue sessions as individual JSON files.
 
 
 1. File name
@@ -52,3 +56,10 @@ We asked the non-native English speaking workers to refrain from joining this an
 
 5. Miscellaneous Notes
 Due to the subjective nature of this task, we did not provide any check question to be used in CrowdFlower.
+Actual IRIS dialogue sessions start with a fixed system prompt. We cut out the initial prompt.
+
+### revisions
+
+July 28th, 2017: Updated with iris_100.zip
+
+July 4th, 2017: Initial version with ticktock_100.zip
