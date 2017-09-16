@@ -55,13 +55,10 @@ Each element of the 'annotations' field contains the following fields:
 
 NOTE: Only the 'turn-index' field is numerical. All the others are textual.
 
-
 3. Speakers
 Refer to http://workshop.colips.org/wochat/data/index.html
-
-Refer also to http://convai.io/
-
-For YI_json_data.zip, the speakers were from AMT.
+For CIC, Refer also to http://convai.io/
+For YI, the speakers were from AMT.
 
 4. Annotators
 For IRIS and TickTock, we used crowd workers from CrowdFlower for annotation.
