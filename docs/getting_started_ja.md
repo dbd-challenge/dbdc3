@@ -25,7 +25,7 @@ You can check whether each program is correctly installed by executing the follo
 `$python -V`
 
 
-#Launching baseline program
+# Launching baseline program
 
 The baseline program uses words included in each utterance as features (Bag-of-Words) and detects dialogue breakdowns by using Conditional Random Fields (CRFs).
 This program outputs three kinds of labels, O (not a breakdown), T (possible breakdown,) and X (breakdown) with probability distributions.
