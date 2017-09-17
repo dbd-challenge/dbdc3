@@ -24,7 +24,7 @@ The context comes from [SQuAD dataset](https://rajpurkar.github.io/SQuAD-explore
 
 ### Development Data for Japanese
 
-The following data can be used for development data for DBDC3. These data are those used in previous DBD challenges.
+The following data can be used for development data for Japanese. These data are those used in the past DBDCs.
 
 * [Chat dialogue corpus](https://sites.google.com/site/dialoguebreakdowndetection/chat-dialogue-corpus) (1,146 dialogues)
 The dialogues are collected by using NTT Docomo's chat API (DCM). 100 dialogues are annotated by 24 annotators and the rest of the dialogues are
