@@ -70,6 +70,3 @@ when O and T are regarded as a single label.
 By using the [evaluation script](https://github.com/dbd-challenge/dbdc3/tree/master/prog/eval),
 you can evaluate your dialogue breakdown detector by using the above evaluation metrics.
 Refer to [this page](https://dbd-challenge.github.io/dbdc3/getting_started) to get information about how to use the evaluation script.
-
-When you execute the evaluation script, evaluation results in several evaluation metrics are obtained. 
-
