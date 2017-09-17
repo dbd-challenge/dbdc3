@@ -12,7 +12,7 @@ file will be `1408278293.labels.json`.
 
 ## Format of the output result file
 
-It is in a JSON format．An example is given below:
+The output result file should be in a JSON format．An example is given below:
 
 ~~~~~~~~
 {
@@ -66,8 +66,8 @@ It is in a JSON format．An example is given below:
 
 ## Description of each field
 
-* dialogue-id ： dialogue-ID. This ID should match that of the input dialogue file.
-* turns ： This field contains all the dialogue breakdown detection results for the utterances.
+* dialogue-id ： This ID should match that of the input dialogue file.
+* turns ： This field contains all the dialogue breakdown detection results for all turns.
 * turn-index ： This field denotes the index of a turn and should match that of the input dialogue file. 
 * labels ： This field contains the dialogue breakdown detection results for a turn.
 * breakdown ： This can be one of O or T or X, corresponding to not a breakdown, possible breakdown, and breakdown.
