@@ -5,10 +5,10 @@ The evaluation script accepts this format.
 
 ## Naming convention for input/output files
 
-The input dialogue file for dialogue breakdown detection is <dialogue-id).log.json.
-The output result file will be <dialogue-id).labels.json.
-For example, if an input dialogue file is 1408278293.log.json, then the output result
-file will be 1408278293.labels.json.
+The input dialogue file for dialogue breakdown detection is `<dialogue-id>.log.json`.
+The output result file will be `<dialogue-id>.labels.json`.
+For example, if an input dialogue file is `1408278293.log.json`, then the output result
+file will be `1408278293.labels.json`.
 
 ## Format of the output result file
 
