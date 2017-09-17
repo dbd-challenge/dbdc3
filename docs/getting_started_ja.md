@@ -66,7 +66,7 @@ baseline/
 `$python eval.py -p ./test/ -o ./out/ -t 0.5`
 
 2. 正解データに関する情報と破綻検出の性能評価結果が表示されます．なお，正解データに関する情報の「O ～ X Label Num」は，アノテータ間の多数決により決定されたラベルの数を意味しており，実際に対話データに含まれている複数人によって付与されたアノテーションの総数とは異なる値です．
-
+	~~~~
 	######### Data Stats #########
 	File Num : 		50
 	System Utterance Num : 	500
@@ -93,3 +93,4 @@ baseline/
 	Mean squared error (O,T+X) : 	0.306044
 	Mean squared error (O+T,X) : 	0.293160
 	###########################
+	~~~~
