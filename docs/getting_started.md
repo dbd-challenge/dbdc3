@@ -42,7 +42,7 @@ since this is a simple baseline, the output distribution is deterministic, i.e.,
 By following the steps below, you can train a simple dialogue breakdown detector and evaluate its performance. This example uses IRIS dataset in
 the [development data](datasets).
 
-1. Download the [baseline program] and the [evaluation script].
+1. Download the [baseline program](https://dbd-challenge.github.io/dbdc3/) and the [evaluation script](https://dbd-challenge.github.io/dbdc3/).
 2. Place the `eval.py` in `eval_script.zip` in the same directory as the baseline program.
 3. Split 100 json files of IRIS_100 into two sets of 50 files each and place them under `baseline/train/` and `baseline/test/`.
    Here, we sorted the json files alphabetically and put the initial 50 files (from 1407219916log.json to 1408219169log.json) under `train` and
@@ -109,14 +109,14 @@ Mean squared error (O+T,X) : 	0.293160
 ###########################
 ~~~~
 
-The meaning of the evaluation metrics can be found in the [evaluation metrics section](evaluation_metrics).
+The meaning of the evaluation metrics can be found in the [evaluation metrics section](https://dbd-challenge.github.io/dbdc3/evaluation_metrics).
 
 ### Create your own dialogue breakdown detector
 
 After this getteing-started section, I hope you can get the idea of what to do. We, the organizers,
 hope that many good dialogue breakdown detection algorithms be submitted at the formal-run.
 
-See [this section](how_to_submit_runs) to how to submit runs at the formal-run.
+See [this section](https://dbd-challenge.github.io/dbdc3/how_to_submit_runs) to how to submit runs at the formal-run.
 
 
 
