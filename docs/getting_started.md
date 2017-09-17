@@ -9,6 +9,10 @@ with dialogue breakdown annotations) to develop your own dialogue breakdown dete
 For the challenge participants, at the time of the formal-run, dialogue data without dialogue breakdown annotations are provided.
 The participants will submit their dialogue breakdown detection results using their own algorithms.
 
+If you are interested,
+you can have a look at [this paper](http://www.lrec-conf.org/proceedings/lrec2016/summaries/525.html) for the overview of
+the dialogue breakdown detection challenge.
+
 ## About dialogue data and dialogue breakdown detection
 
 The dialogues in the development data are annotated with dialogue breakdown detection labels. There are three types of labels:
@@ -42,8 +46,8 @@ since this is a simple baseline, the output distribution is deterministic, i.e.,
 By following the steps below, you can train a simple dialogue breakdown detector and evaluate its performance. This example uses IRIS dataset in
 the [development data](datasets).
 
-1. Download the [baseline program](https://dbd-challenge.github.io/dbdc3/) and the [evaluation script](https://dbd-challenge.github.io/dbdc3/).
-2. Place the `eval.py` in `eval_script.zip` in the same directory as the baseline program.
+1. Download the [baseline program](https://github.com/dbd-challenge/dbdc3/tree/master/prog/crf_baseline) and the [evaluation script](https://github.com/dbd-challenge/dbdc3/tree/master/prog/eval).
+2. Place the `eval.py` in the same directory as the baseline program.
 3. Split 100 json files of IRIS_100 into two sets of 50 files each and place them under `baseline/train/` and `baseline/test/`.
    Here, we sorted the json files alphabetically and put the initial 50 files (from 1407219916log.json to 1408219169log.json) under `train` and
    the remaining 50 files (from iris_00014.log.json to iris_00105.log.json) to `test`.
@@ -116,8 +120,5 @@ The meaning of the evaluation metrics can be found in the [evaluation metrics se
 After this getteing-started section, I hope you can get the idea of what to do. We, the organizers,
 hope that many good dialogue breakdown detection algorithms be submitted at the formal-run.
 
-See [this section](https://dbd-challenge.github.io/dbdc3/how_to_submit_runs) to how to submit runs at the formal-run.
-
-
-
-
+See [this section](https://dbd-challenge.github.io/dbdc3/how_to_submit_runs) to get information about
+how to submit your runs at the formal-run.
