@@ -20,8 +20,8 @@ To run the baseline program and evaluation script, the following must be install
 JavaSE-1.7+
 Python 2.7.x
 Execute the program on the command prompt (Windows) / Terminal (Mac, Linux). 
-You can check whether each program is correctly installed by executing the following command.
-`$java -version`
+You can check whether each program is correctly installed by executing the following command.  
+`$java -version`  
 `$python -V`
 
 
