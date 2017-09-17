@@ -7,7 +7,7 @@ At the time of the formal-run, we will distribute evaluation data.
 Please freeze your programs once you have unzipped the evaluation data.
 You can only fix trivial mistakes after you see the evaluation data.
 
-See [Dataset](datasets) for the descriptions of the data in the formal-run.
+See the [dataset section](https://dbd-challenge.github.io/dbdc3/datasets) for the descriptions of the data in the formal-run.
 
 To make the evaluation process as fair as possible, we do not include reference dialogue
 breakdown labels in the evaluation data. We replace all reference labels with "`O`".
@@ -74,7 +74,7 @@ Each zip file for Japanese should have 150 json files.
 `jp` is the top-level folder and below that, there are three folders named DCM, DIT and IRS.
 Under each of these folders, there should be 50 json files.
 
-See the [submission format](submission_format) for the details of the `<dialogue-id>.labels.json` file.
+See the [submission format](https://dbd-challenge.github.io/dbdc3/submission_format) for the details of the `<dialogue-id>.labels.json` file.
 
 As an example, if your team-ID is `AAA` and you submit two runs for English and three runs for Japanese,
 you will attach the following files to your email.
