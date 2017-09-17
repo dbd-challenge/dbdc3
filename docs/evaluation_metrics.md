@@ -1,7 +1,7 @@
 # Evaluation metrics
 
 We use two types of evaluation metrics: classification-related
-and distribution-related. Here, O means "not a breakdown", T "possible breakdown", and X "breakdown".
+and distribution-related. Here, O means `not a breakdown`, T `possible breakdown`, and X `breakdown`.
 
 ## Classification-related metrics
 
@@ -67,10 +67,9 @@ when O and T are regarded as a single label.
 
 ## How to evaluate your dialogue breakdown detector
 
-By using the script we are distributing, you can evaluate your dialogue breakdown detector
-by using the above evaluation metrics.
-Refer to [this page](getting_started) or the readme file
-in the evaluation package (eval_script.zip).
-When you execute the evaluation script, evaluation results in several evaluation
-metrics are obtained. 
+By using the [evaluation script](https://github.com/dbd-challenge/dbdc3/tree/master/prog/eval),
+you can evaluate your dialogue breakdown detector by using the above evaluation metrics.
+Refer to [this page](https://dbd-challenge.github.io/dbdc3/getting_started) to get information about how to use the evaluation script.
+
+When you execute the evaluation script, evaluation results in several evaluation metrics are obtained. 
 
