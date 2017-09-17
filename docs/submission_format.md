@@ -1,7 +1,9 @@
-# Submission format
+# Output format for dialogue breakdown detection results
 
-Each participant must submit the dialogue breakdown detection results in JSON format.
-The evaluation script accepts this format.
+This page shows the output format for dialogue breakdown detection results.
+The evaluation script can only accept this format. Refer also to
+[this section](https://dbd-challenge.github.io/dbdc3/how_to_submit_runs) for the
+information about how to submit your runs at the formal-run.
 
 ## Naming convention for input/output files
 
