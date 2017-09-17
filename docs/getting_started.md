@@ -9,7 +9,7 @@ dialogue breakdown annotations (in JSON format) are distributed. You can use the
 For the challenge participants, at the time of the formal-run, dialogue data without dialogue breakdown annotations are provided.
 The participants will submit their dialogue breakdown detection results using their own algorithms.
 
-## About dialogue data and dialogue breakdown
+## About dialogue data and dialogue breakdown detection
 
 In each of the dialogue data, each utterance is annotated with dialogue breakdown detection labels. There are three types of labels:
 O (not a breakdown), T (possible breakdown), and X (breakdown). In the developement data for English, each utterance is annotated by 30 annotators.
@@ -34,7 +34,7 @@ You can check whether each program is correctly installed by executing the follo
 `$python -V`
 ~~~~
 
-### How to run the program
+### How to run the baseline program
 
 The baseline program uses words included in each utterance as features (Bag-of-Words) and detects dialogue breakdowns by using Conditional Random Fields (CRFs).
 This program outputs three kinds of labels, O (not a breakdown), T (possible breakdown,) and X (breakdown) with probability distributions; however,
@@ -74,6 +74,7 @@ specified by -p and outputs the results to the directory specified by -o in JSON
 This script evaluates the output of a dialogue breakdown detector. The script can be executed by the following steps.
 
 1. To evaluate the output by the baseline program above, run the following command.
+
 `$python eval.py -p ./test/ -o ./out/ -t 0.5`
 
 2. The performance of the dialogue breakdown detector is desplayed. Here, the number of Label Num shows the
