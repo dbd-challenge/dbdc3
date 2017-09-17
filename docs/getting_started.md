@@ -1,7 +1,3 @@
----
-title: Getting started
----
-
 # Getting started
 
 ## About this challenge
