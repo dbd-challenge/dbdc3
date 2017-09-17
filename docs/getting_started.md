@@ -80,7 +80,6 @@ This script evaluates the output of a dialogue breakdown detector. The script ca
 
 1. To evaluate the output by the baseline program above, run the following command.
 　`$python eval.py -p ./test/ -o ./out/ -t 0.5`
-
 2. The performance of the dialogue breakdown detector is displayed. Here, the number of Label Num shows the
 number of labels decided by the majority voting. This number does not match the actual number of dialogue breakdown
 labels by human annotators.
