@@ -69,10 +69,8 @@ when O and T are regarded as a single label.
 
 By using the script we are distributing, you can evaluate your dialogue breakdown detector
 by using the above evaluation metrics.
-
 Refer to [this page](getting_started) or the readme file
 in the evaluation package (eval_script.zip).
-
 When you execute the evaluation script, evaluation results in several evaluation
 metrics are obtained. 
 
