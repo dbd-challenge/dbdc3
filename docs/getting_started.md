@@ -115,7 +115,7 @@ Mean squared error (O+T,X) : 	0.293160
 
 The meaning of the evaluation metrics can be found in the [evaluation metrics section](https://dbd-challenge.github.io/dbdc3/evaluation_metrics).
 
-### Create your own dialogue breakdown detector
+### Create your own dialogue breakdown detector!
 
 After this getteing-started section, I hope you can get the idea of what to do. We, the organizers,
 hope that many good dialogue breakdown detection algorithms be submitted at the formal-run.
