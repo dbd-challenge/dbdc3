@@ -11,17 +11,17 @@ is calculated by comparing the output of the detector
 and the gold label determined by majority voting. We use a
 threshold t to obtain the gold label.
 
-### Accuracy
+* Accuracy
 
 The number of correctly classified labels
 divided by the total number of labels to be classified.
 
-### Precision, Recall, F-measure (X)
+* Precision, Recall, F-measure (X)
 
 The precision, recall,
 and F-measure for the classification of the X labels.
 
-### Precision, Recall, F-measure (T+X)
+* Precision, Recall, F-measure (T+X)
 
 The precision,
 recall, and F-measure for the classification of T + X
@@ -35,32 +35,32 @@ distribution of the breakdown labels, which is calculated
 by comparing the predicted distribution of the labels with
 that of the gold labels.
 
-### JS divergence (O, T, X)
+* JS divergence (O, T, X)
 
 Distance between the predicted
 distribution of the three labels and that of the
 gold labels calculated by Jensen-Shannon Divergence.
 
-### JS divergence (O, T+X)
+* JS divergence (O, T+X)
 
 JS divergence when T and X are regarded as a single label.
 
-### JS divergence (O+T, X)
+* JS divergence (O+T, X)
 
 JS divergence when O and T are regarded as a single label.
 
-### Mean squared error (O, T, X)
+* Mean squared error (O, T, X)
 
 Distance between
 the predicted distribution of the three labels and that
 of the gold labels calculated by mean squared error.
 
-### Mean squared error (O, T+X)
+* Mean squared error (O, T+X)
 
 Mean squared error
 when T and X are regarded as a single label.
 
-### Mean squared error (O+T, X)
+* Mean squared error (O+T, X)
 
 Mean squared error
 when O and T are regarded as a single label.
