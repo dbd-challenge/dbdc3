@@ -50,7 +50,7 @@ baseline/
          | ・・・
         └iris_00161.log.json
 ~~~~
-5. baseline/train/ 内のデータを学習データとし，baseline/test/ 内のテストデータに対して破綻検出を行います．ターミナルでbaselineディレクトリに移動し，以下のコマンドを実行してください．
+5. baseline/train/ 内のデータを学習データとし，baseline/test/ 内のテストデータに対して破綻検出を行います．ターミナルでbaselineディレクトリに移動し，以下のコマンドを実行してください．  
 	`$java -jar DBDBaseline.jar -l ./train/ -p ./test/ -o ./out/ -t 0.5`
 
 6. When training is finished, the model detects dialogue breakdowns on the JSON files in the directory containing the test data specified by -p and outputs the results to the directory specified by -o in JSON format.
