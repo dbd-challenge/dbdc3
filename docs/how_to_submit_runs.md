@@ -74,7 +74,7 @@ Each zip file for Japanese should have 150 json files.
 `jp` is the top-level folder and below that, there are three folders named DCM, DIT and IRS.
 Under each of these folders, there should be 50 json files.
 
-See the [submission format](https://dbd-challenge.github.io/dbdc3/submission_format) for the details of the `<dialogue-id>.labels.json` file.
+See the [output format](https://dbd-challenge.github.io/dbdc3/output_format) for the details of the `<dialogue-id>.labels.json` file.
 
 As an example, if your team-ID is `AAA` and you submit two runs for English and three runs for Japanese,
 you will attach the following files to your email.
