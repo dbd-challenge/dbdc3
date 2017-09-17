@@ -1,4 +1,4 @@
-ow to submit runs
+# How to submit runs
 
 ## Distribution of evaluation data
 
@@ -21,8 +21,7 @@ Please send your run files by email to:
 The subject of the email should be `DBDC3 formal-run <your-team-ID>`.
 
 For each language, each team can submit upto 3 runs.
-The run file should have the name `DBDC3-<your-team-ID>-<lang>-<run#>.zip`.
-`<lang>` should be either `en` or `jp`.
+The run file should have the name `DBDC3-<your-team-ID>-<lang>-<run#>.zip`. `<lang>` should be either `en` or `jp`.
 
 Each zip file should have the following directory structure.
 
