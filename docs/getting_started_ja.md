@@ -34,7 +34,7 @@ However, each distribution is deterministic, i.e., 1.0 for the output label, 0.0
 1. まず，対話データ，[baseline script]，[eval script]をダウンロードしてください．
 2. baselineと同じディレクトリ内にeval_script.zipにあるeval.pyを配置してください．
 3. 次に，IRIS_100ディレクトリ内の100個のjsonを2つに分け，それぞれ baseline/train/ と baseline/test/ ディレクトリに入れてください．
-4. ディレクトリ構成は以下のようになるはずです． 以下の例では，IRIS_100のデータを名前順にソートし，先頭の50個（1407219916log.json～1408219169log.json）をbaseline/train/ に，残りの50個（1408261480log.json～1409463385log.json）を baseline/test/ に配置しました．
+4. ディレクトリ構成は以下のようになるはずです． 以下の例では，IRIS_100のデータを名前順にソートし，先頭の50個（1407219916log.json～1408219169log.json）をbaseline/train/ に，残りの50個（iris_00014.log.json～iris_00105.log.json）を baseline/test/ に配置しました．
 ~~~~
 baseline/
     | DBDBaseline.jar 
