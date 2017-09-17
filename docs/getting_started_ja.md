@@ -35,6 +35,7 @@ However, each distribution is deterministic, i.e., 1.0 for the output label, 0.0
 2. baselineと同じディレクトリ内にeval_script.zipにあるeval.pyを配置してください．
 3. 次に，IRIS_100ディレクトリ内の100個のjsonを2つに分け，それぞれ baseline/train/ と baseline/test/ ディレクトリに入れてください．
 4. ディレクトリ構成は以下のようになるはずです． 以下の例では，IRIS_100のデータを名前順にソートし，先頭の80個（1407219916log.json～1408219169log.json）をbaseline/train/ に，残りの50個（1408261480log.json～1409463385log.json）を baseline/test/ に配置しました．
+~~~~
 baseline/
     | DBDBaseline.jar 
     | eval.py
@@ -48,7 +49,7 @@ baseline/
          | iris_00107.log.json
          | ・・・
         └iris_00161.log.json
-
+~~~~
 5. baseline/train/ 内のデータを学習データとし，baseline/test/ 内のテストデータに対して破綻検出を行います．ターミナルでbaselineディレクトリに移動し，以下のコマンドを実行してください．
 	`$java -jar DBDBaseline.jar -l ./train/ -p ./test/ -o ./out/ -t 0.5`
 
