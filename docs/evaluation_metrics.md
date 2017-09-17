@@ -1,7 +1,7 @@
 # Evaluation metrics
 
 We use two types of evaluation metrics: classification-related
-and distribution-related. Here, O means not a breakdown, T possible breakdown, and B breakdown.
+and distribution-related. Here, O means "not a breakdown", T "possible breakdown", and X "breakdown".
 
 ## Classification-related metrics
 
