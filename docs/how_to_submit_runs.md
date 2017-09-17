@@ -1,4 +1,4 @@
-# How to submit runs
+ow to submit runs
 
 ## Distribution of evaluation data
 
@@ -22,29 +22,30 @@ The subject of the email should be `DBDC3 formal-run <your-team-ID>`.
 
 For each language, each team can submit upto 3 runs.
 The run file should have the name `DBDC3-<your-team-ID>-<lang>-<run#>.zip`.
-<lang> should be either `en` or `jp`.
+`<lang>` should be either `en` or `jp`.
 
 Each zip file should have the following directory structure.
 
 ### For English
-~~~~~~~~
-en|-IRIS
+
+~~~~
+en/-IRIS/
     |-<dialogue-id>.labels.json
     |-...
     |-<dialogue-id>.labels.json
-  |-TickTock
+  |-TickTock/
     |-<dialogue-id>.labels.json
     |-...
     |-<dialogue-id>.labels.json
-  |-CIC
+  |-CIC/
     |-<dialogue-id>.labels.json
     |-...
     |-<dialogue-id>.labels.json
-  |-YI
+  |-YI/
     |-<dialogue-id>.labels.json
     |-...
     |-<dialogue-id>.labels.json    
-~~~~~~~~
+~~~~
 
 Each zip file for English should have 200 json files.
 
@@ -52,20 +53,21 @@ Each zip file for English should have 200 json files.
 Under each of these folders, there should be 50 json files.
 
 ### For Japanese
-~~~~~~~~
-jp|-DCM
+
+~~~~
+jp/-DCM/
     |-<dialogue-id>.labels.json
     |-...
     |-<dialogue-id>.labels.json
-  |-DIT
+  |-DIT/
     |-<dialogue-id>.labels.json
     |-...
     |-<dialogue-id>.labels.json
-  |-IRS
+  |-IRS/
     |-<dialogue-id>.labels.json
     |-...
     |-<dialogue-id>.labels.json
-~~~~~~~~
+~~~~
 
 Each zip file for Japanese should have 150 json files.
 
@@ -76,13 +78,13 @@ See the [submission format](submission_format) for the details of the `<dialogue
 
 As an example, if your team-ID is `AAA` and you submit two runs for English and three runs for Japanese,
 you will attach the following files to your email.
-~~~~~~~~
+~~~~
 DBDC3-AAA-en-1.zip
 DBDC3-AAA-en-2.zip
 DBDC3-AAA-jp-1.zip
 DBDC3-AAA-jp-2.zip
 DBDC3-AAA-jp-3.zip
-~~~~~~~~
+~~~~
 
 Please describe the method used for each run in the body of the email. We will take it into
 cosideration when we write the overview paper.
