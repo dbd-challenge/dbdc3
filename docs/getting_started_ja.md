@@ -31,7 +31,7 @@ The baseline program uses words included in each utterance as features (Bag-of-W
 This program outputs three kinds of labels, O (not a breakdown), T (possible breakdown,) and X (breakdown) with probability distributions.
 However, each distribution is deterministic, i.e., 1.0 for the output label, 0.0 for the others.
 
-1. まず，対話データ，[baseline script]，[eval script]をダウンロードしてください．
+1. まず，対話データ，[baseline]，[eval script]をダウンロードしてください．
 2. baselineと同じディレクトリ内にeval_script.zipにあるeval.pyを配置してください．
 3. 次に，IRIS_100ディレクトリ内の100個のjsonを2つに分け，それぞれ baseline/train/ と baseline/test/ ディレクトリに入れてください．
 4. ディレクトリ構成は以下のようになるはずです． 以下の例では，IRIS_100のデータを名前順にソートし，先頭の50個（1407219916log.json～1408219169log.json）をbaseline/train/ に，残りの50個（iris_00014.log.json～iris_00105.log.json）を baseline/test/ に配置しました．
@@ -55,8 +55,8 @@ baseline/
 
 6. When training is finished, the model detects dialogue breakdowns on the JSON files in the directory containing the test data specified by -p and outputs the results to the directory specified by -o in JSON format.
 
-[baseline]:https://github.com/dbd-challenge/dbdc3/tree/master/prog/crf_baseline  "baseline"
-[eval script]:https://github.com/dbd-challenge/dbdc3/tree/master/prog/eval_script "eval script"
+[baseline]:../prog/crf_baseline  "baseline"
+[eval script]:../prog/eval "eval script"
 
 
 # How to run the evaluation script
