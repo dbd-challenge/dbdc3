@@ -138,7 +138,7 @@ def main():
 
         eval_index = 0
         for turn in data_json['turns']:
-            if turn['speaker'] == "U":
+            if turn['speaker'] == "U" or turn['annotations']==[]:  # modified Sep 17 2017
                 continue
 
             label_num += 1
