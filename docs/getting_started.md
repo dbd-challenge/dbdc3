@@ -123,6 +123,6 @@ hope that many good dialogue breakdown detection algorithms be submitted at the 
 See [this section](https://dbd-challenge.github.io/dbdc3/how_to_submit_runs) to get information about
 how to submit your runs at the formal-run.
 
-Please also refer to the [submission format](https://dbd-challenge.github.io/dbdc3/submission_format)
+Please also refer to the [output format](https://dbd-challenge.github.io/dbdc3/output_format)
 when preparing files for the formal-run. Note that this is the output format of the baseline program.
 
