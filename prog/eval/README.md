@@ -1,13 +1,13 @@
 Evaluation script
 ====
 
-# About
+## About
   This script evaluates the output of a dialogue breakdown detector. In addition to the accuracy, recall rate, F values are calculated.
 
-# Execution environment
+## Execution environment
   Python 2.7.x
 
-# How to run
+## How to run
   $python eval.py -p (Directory containing test data) -o (output directory) -t (threshold of concordance rate)
 
   When executed, it compares the dialogue data specified by -p with the detection result data specified by -o,
@@ -19,7 +19,7 @@ Evaluation script
   For example, if two annotators give "O", three give "T", and five give "X", then the ratio of label "X" is 5 / (2 + 3 + 5) = 0.5 which is the largest of the three. 
   If the threshold specified by "-t" is 0.5 or less, the label of the utterance is determined to be "X", but if it is larger than 0.5 it becomes "O".
 
-# Evaluation items
+## Evaluation items
 
   Accuracy: 
   The number of correctly classified labels divided by the total number of labels to be classified.
@@ -48,7 +48,7 @@ Evaluation script
   Mean squared error (O+T, X):
   Mean squared error when O and T are regarded as a single label. 
 
-# File format
+## File format
 
   The format of the breakdown detection result file is described as below. The evaluation script can only accept this format. 
 
@@ -62,6 +62,7 @@ Evaluation script
   The output result file should be in a JSON format．An example is given below:
 
   ##### Example #####
+  ~~~~~~~
   {
     "dialogue-id" : "1408278293",
     "turns" : [ {
@@ -110,9 +111,9 @@ Evaluation script
   }
 
   ##########
+  ~~~~~~~
 
-
-# Description of each field
+## Description of each field
 
   dialogue-id ： This ID should match that of the input dialogue file.
   turns ： This field contains all the dialogue breakdown detection results for all turns.
