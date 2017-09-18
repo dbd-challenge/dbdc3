@@ -1,4 +1,3 @@
-
 # How to submit runs
 
 ## Distribution of evaluation data
@@ -15,11 +14,6 @@ Once we receive your dialogue breakdown detection results, we (the organizers)
 will run the evaluation script on your result files and let you know the evaluation results as soon as possible.
 
 ## How to submit your runs
-
-Please send your run files by email to:
-`dbdc3-organizers@googlegroups.com`.
-
-The subject of the email should be `DBDC3 formal-run <your-team-ID>`.
 
 For each language, each team can submit upto 3 runs.
 The run file should have the name `DBDC3-<your-team-ID>-<lang>-<run#>.zip`. `<lang>` should be either `en` or `jp`.
@@ -74,10 +68,10 @@ Each zip file for Japanese should have 150 json files.
 `jp` is the top-level folder and below that, there are three folders named DCM, DIT and IRS.
 Under each of these folders, there should be 50 json files.
 
-See the [output format](https://dbd-challenge.github.io/dbdc3/output_format) for the details of the `<dialogue-id>.labels.json` file.
+See the [submission format](https://dbd-challenge.github.io/dbdc3/submission_format) for the details of the `<dialogue-id>.labels.json` file.
 
 As an example, if your team-ID is `AAA` and you submit two runs for English and three runs for Japanese,
-you will attach the following files to your email.
+you will prepare the following files for submission.
 ~~~~
 DBDC3-AAA-en-1.zip
 DBDC3-AAA-en-2.zip
@@ -86,8 +80,9 @@ DBDC3-AAA-jp-2.zip
 DBDC3-AAA-jp-3.zip
 ~~~~
 
-Please describe the method used for each run in the body of the email. We will take it into
-cosideration when we write the overview paper.
+## Where to submit your runs
+
+We will notify the participants where to submit your runs when the formal-run begins.
 
 ## If you have any questions
 
