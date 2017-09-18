@@ -116,11 +116,11 @@ Evaluation script
 
 ## Description of each field
 
-  dialogue-id ： This ID should match that of the input dialogue file.  
-  turns ： This field contains all the dialogue breakdown detection results for all turns.  
-  turn-index ： This field denotes the index of a turn and should match that of the input dialogue file.  
-  labels ： This field contains the dialogue breakdown detection results for a turn.  
-  breakdown ： This can be one of O or T or X, corresponding to not a breakdown, possible breakdown, and breakdown, corresponding to the hard-decision made by a dialogue breakdown detector.  
-  prob-O ： Probability that the dialogue breakdown detection result is O (not a breakdown).  
-  prob-T ： Probability that the dialogue breakdown detection result is T (possible breakdown).  
-  prob-X ： Probability that the dialogue breakdown detection result is X (breakdown).  
+  - dialogue-id ： This ID should match that of the input dialogue file.  
+  - turns ： This field contains all the dialogue breakdown detection results for all turns.  
+  - turn-index ： This field denotes the index of a turn and should match that of the input dialogue file.  
+  - labels ： This field contains the dialogue breakdown detection results for a turn.  
+  - breakdown ： This can be one of O or T or X, corresponding to not a breakdown, possible breakdown, and breakdown, corresponding to the hard-decision made by a dialogue breakdown detector.  
+  - prob-O ： Probability that the dialogue breakdown detection result is O (not a breakdown).  
+  - prob-T ： Probability that the dialogue breakdown detection result is T (possible breakdown).  
+  - prob-X ： Probability that the dialogue breakdown detection result is X (breakdown).  
