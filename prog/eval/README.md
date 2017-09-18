@@ -61,8 +61,8 @@ Evaluation script
 
   The output result file should be in a JSON format．An example is given below:
 
-  ##### Example #####
   ~~~~~~~
+  ##### Example #####
   {
     "dialogue-id" : "1408278293",
     "turns" : [ {
