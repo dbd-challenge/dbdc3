@@ -9,6 +9,10 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+
 import projectNextNLP.dialogue.json.Label;
 import projectNextNLP.dialogue.json.Result;
 import projectNextNLP.dialogue.json.Turn;
@@ -17,10 +21,6 @@ import projectNextNLP.dialogue.sample.Dialogue;
 import projectNextNLP.dialogue.sample.DialogueDataConverter;
 import projectNextNLP.dialogue.sample.DialogueDataReader;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
-
 
 public class Executer {
 	public static void main(String[] args) throws JsonProcessingException, IOException {
@@ -28,7 +28,7 @@ public class Executer {
 		String predictPath = null;
 		String outputPath = null;
 		double threshold = 0.0;
-		boolean withoutPost = true;
+
 
 		for (int i = 0; i < args.length; i++) {
 
@@ -61,9 +61,9 @@ public class Executer {
 				case THRESHOLD:
 					threshold = Double.parseDouble(args[i + 1]);
 					break;
-					
+
 				default:
-					System.err.println("未知のコマンドが指定されています");
+					System.err.println("Unknown command");
 					System.exit(0);
 					break;
 				}
@@ -76,29 +76,25 @@ public class Executer {
 		}else if(outputPath == null) {
 			throw new IllegalArgumentException("Missing output directory path");
 		}
-
-		//predictPathが未入力の場合はlearnPathと同じにする
 		if(predictPath == null) {
 			predictPath = learnPath;
 		}
 
-		//出力先フォルダが無ければ作成
+		//Make output directory
 		File outputDir = new File(outputPath);
 		if(!outputDir.exists()) {
 			outputDir.mkdirs();
 		}
 
 
-
-
-		//学習
+		//Learning
 		List<Dialogue> learnDList = DialogueDataReader.readDir(learnPath,threshold);
 		DialogueDataConverter ddc = new DialogueDataConverter();
 		CRFBreakdownTagger cbt = new CRFBreakdownTagger();
 
 		cbt.learn(ddc.convert(learnDList));
 
-		//ラベリング
+		//Predict
 		File file = new File(predictPath);
 
 
@@ -107,12 +103,8 @@ public class Executer {
 				Dialogue tmpDlg = DialogueDataReader.readFile(f.toString(),threshold);
 				List<String> seq;
 
-				//当該システム発話より後の発話を使用しない場合
-				if(withoutPost){
-					seq	= cbt.predictOneByOne(ddc.convert(tmpDlg));
-				}else{//当該システム発話より後の発話を使用する場合
-					seq = cbt.predict(ddc.convert(tmpDlg));
-				}
+
+				seq = cbt.predict(ddc.convert(tmpDlg));
 
 				Result result = new Result(tmpDlg.getId());
 				List<Turn> turns = new ArrayList<Turn>();
@@ -138,12 +130,24 @@ public class Executer {
 						turn.addLabel(new Label("X",0, 0, 1.0));
 						result.addTurn(turn);
 						break;
+					case "1":
+						turn.addLabel(new Label("1",1.0, 0, 0));
+						result.addTurn(turn);
+						break;
+					case "2":
+						turn.addLabel(new Label("2",0.0, 1.0, 0));
+						result.addTurn(turn);
+						break;
+					case "3":
+						turn.addLabel(new Label("3",0, 0, 1.0));
+						result.addTurn(turn);
+						break;
 					default:
 						System.err.println("Annotation ERROR");
 						System.out.println(predictLabel + " " + f.getName());
 					}
 
-					FileOutputStream fos = new FileOutputStream(outputPath + tmpDlg.getId() + ".labels.json");
+					FileOutputStream fos = new FileOutputStream(outputPath + f.getName().replace(".log.json", ".labels.json"));
 					OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8);
 					BufferedWriter writer = new BufferedWriter(osw);
 
@@ -155,37 +159,6 @@ public class Executer {
 
 			}
 		}
-
-
-
-
-
-
-
-
-//		String testLine = "";
-//		List<Dialogue> targetDList = DialogueDataReader.readDir(predictPath);
-//		List<Sequence> plist = cbt.predict(ddc.convert(targetDList));
-//
-//
-//
-//
-//
-//		for(Dialogue d : targetDList) {
-//			for(Sequence seq : plist) {
-//				for(int i = 0; i < seq.size(); i++) {
-//					System.out.print(d.getUtteranceList().get(i).getText() + " " + d.getUtteranceList().get(i).getLabel() + " ");
-//					System.out.println(seq.get(i));
-//				}
-//			}
-//		}
-
-
-
-
-
-
-
 
 	}
 }

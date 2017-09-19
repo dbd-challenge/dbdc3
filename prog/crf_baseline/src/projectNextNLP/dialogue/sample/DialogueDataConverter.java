@@ -28,12 +28,14 @@ public class DialogueDataConverter {
 			List<Token> tokenList = new ArrayList<Token>();
 
 			try{
-				tagger.analyze(u.getText(), tokenList);
-
-				for(Token t : tokenList) {
-					out += t.getSurface() + " ";
+				if(isJapanese(u.getText())){
+					tagger.analyze(u.getText(), tokenList);
+					for(Token t : tokenList) {
+						out += t.getSurface() + " ";
+					}
+				}else{
+					out += u.getText() + " ";
 				}
-
 				if(u.getSpeaker().equals("S")) {
 					out += "Speaker:S ";
 				}else if(u.getSpeaker().equals("U")) {
@@ -62,5 +64,16 @@ public class DialogueDataConverter {
 
 		return out;
 
+	}
+
+	public boolean isJapanese(String s){
+		boolean includeZen = false;
+		char[] chars = s.toCharArray();
+		for (int i = 0; i < chars.length; i++) {
+			if (String.valueOf(chars[i]).getBytes().length >= 2) {
+				includeZen = true;
+			}
+		}
+		return includeZen;
 	}
 }

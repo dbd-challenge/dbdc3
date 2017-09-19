@@ -27,7 +27,7 @@ public class DialogueDataReader {
 				Dialogue dialogue = new Dialogue(dlgId);
 
 				//ユーザ用ラベルのために，直前のラベルを保持
-				String prevLabel = null;
+				String prevLabel = "O";
 
 				for(JsonNode turn : root.get("turns")) {
 					if(turn.get("speaker").asText().equals("S")) {
@@ -119,6 +119,15 @@ public class DialogueDataReader {
 				case "X":
 					countX++;
 					break;
+//				case "1":
+//					countO++;
+//					break;
+//				case "2":
+//					countT++;
+//					break;
+//				case "3":
+//					countX++;
+//					break;
 				default:
 					System.err.println("Annotation is NULL");
 				}
@@ -133,6 +142,15 @@ public class DialogueDataReader {
 		}else{
 			label = "O";
 		}
+//		if(countO >= countT && countO >= countX && countO*1.0 / (countO + countT + countX)*1.0 >= threshold) {
+//			label = "1";
+//		}else if(countT >= countO && countT >= countX && countT*1.0 / (countO + countT + countX)*1.0 >= threshold) {
+//			label = "2";
+//		}else if(countX >= countO && countX >= countT && countX*1.0 / (countO + countT + countX)*1.0 >= threshold) {
+//			label = "3";
+//		}else{
+//			label = "1";
+//		}
 
 		return label;
 	}
