@@ -1,6 +1,6 @@
-# Output format for dialogue breakdown detection results
+# Submission format for dialogue breakdown detection results
 
-This page shows the output format for dialogue breakdown detection results.
+This page shows the submission format for dialogue breakdown detection results.
 The evaluation script can only accept this format. Refer also to
 [this section](https://dbd-challenge.github.io/dbdc3/how_to_submit_runs) for the
 information about how to submit your runs at the formal-run.
