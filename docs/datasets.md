@@ -104,5 +104,5 @@ Actual IRIS dialogue sessions start with a fixed system prompt. We cut out the i
 
 ### Acknowledgements
 
-The development of these datasets were supported by the track sponsors and [Japanese Society of Artificial Intelligence](https://www.ai-gakkai.or.jp/en/).
+The development of these datasets were supported by the track sponsors and [the Japanese Society of Artificial Intelligence (JSAI)](https://www.ai-gakkai.or.jp/en/).
 We thank these supporters and the providers of the original dialogue data.
