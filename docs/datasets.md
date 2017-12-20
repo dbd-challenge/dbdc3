@@ -102,3 +102,7 @@ For CIC and YI datasets, we used crowd workers from AMT.
 Due to the subjective nature of this task, we did not provide any check question to be used in CrowdFlower.
 Actual IRIS dialogue sessions start with a fixed system prompt. We cut out the initial prompt.
 
+### Acknowledgements
+
+The development of these datasets were supported by the track sponsors and [Japanese Society of Artificial Intelligence](https://www.ai-gakkai.or.jp/en/).
+We thank these supporters and the providers of the original dialogue data.
