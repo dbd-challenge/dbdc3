@@ -1,6 +1,6 @@
 # Dataset for DBDC3
 
-Below shows the Dataset made for DBDC3. This dataset includes data for both development and evaluation. After DBDC3 workshop, we revised the annotation and added the new data into this dataset.
+Below shows the dataset for DBDC3. This dataset includes both development and evaluation data. After the DBDC3 workshop, we revised some of the annotations. The dataset below include the revised annotations.
 
 ## Download
 - [DBDC3.zip](https://dbd-challenge.github.io/dbdc3/data/DBDC3.zip)
@@ -43,14 +43,12 @@ There are two folders, "dbdc3" and "dbdc3_revised", in the data folder.  "dbdc3"
 
 The four datasets, CIC_115, YI_100 in dbdc3/en/dev/ and CIC_50, YI_50 in dbdc3/en/test/ were re-annotated and are stored under dbdc3_revised folder.  In the original data, each annotator was allowed to annotate a part of a dialogue; however, in the revised data, each annotator was obliged to annotate all utterances of a dialogue in a row. This revision slightly increased the inter-annotator agreement.
 
-
 ## Context data (DBDC3_context.zip)
 
-This dataset was made by DBDC3 Task Organizers based on [Stanford Question Answering Dataset (SQuAD)](https://rajpurkar.github.io/SQuAD-explorer/).  The data can be used for both profit and nonprofit purposes under the CC BY-SA 4.0 license. The data contain short paragraphs used as context for DBDC3.
-
+This dataset was made by DBDC3 Task Organizers by using [Stanford Question Answering Dataset (SQuAD)](https://rajpurkar.github.io/SQuAD-explorer/).  The data can be used for both profit and nonprofit purposes under the CC BY-SA 4.0 license. The data contain short paragraphs used as context for DBDC3.
 
 # Sponsors
-We gratefully acknowledge the generous support provided by the following:
+We gratefully acknowledge the generous support provided by the following sponsors:
 
 <a href="https://www.d-itlab.co.jp/?lang=en"><img src="https://dbd-challenge.github.io/dbdc3/images/IT_LAB_logo_20111221.png" width="300"></a>
 
@@ -61,3 +59,7 @@ We gratefully acknowledge the generous support provided by the following:
 <img src="https://dbd-challenge.github.io/dbdc3/images/docomo.JPG" width="300">
 
 This track is endorsed by [Special Interest Group on Spoken Language Understanding and Dialogue Processing (SIG-SLUD)](https://jsai-slud.github.io/sig-slud/) of [the Japanese Society of Artificial Intelligence (JSAI)](https://www.ai-gakkai.or.jp/en/).
+
+# Contact
+
+If you have any questions or comments, please contact us by dbdc3-organizers@googlegroups.com.
