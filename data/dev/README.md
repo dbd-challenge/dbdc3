@@ -1,1 +1,1 @@
-See the [dataset description page](https://dbd-challenge.github.io/dbdc3/datasets).
+[DBDC3 dataset (including test data)](https://dbd-challenge.github.io/dbdc3/data/) now available!
